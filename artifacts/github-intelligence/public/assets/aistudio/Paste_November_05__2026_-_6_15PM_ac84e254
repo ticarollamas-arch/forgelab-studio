@@ -1,0 +1,864 @@
+# NOVO MÓDULO — GITHUB PORTFOLIO INTELLIGENCE &amp; REPOSITORY CURATION
+ 
+Atue como engenheiro de software sênior, especialista em GitHub, segurança da informação, análise de repositórios, recrutamento tecnológico e inteligência artificial.
+ 
+Implemente um novo módulo na aplicação existente GitHub Intelligence AI.
+ 
+IMPORTANTE:
+ 
+- Não recrie a aplicação.
+- Não remova funcionalidades existentes.
+- Não substitua integrações reais por dados fictícios.
+- Preserve a arquitetura atual.
+- Integre este módulo ao sistema de auditoria e modernização já existente.
+
+ 
+O objetivo é analisar todos os repositórios GitHub do usuário e identificar quais devem continuar públicos, quais poderiam ser privados, quais merecem arquivamento e quais precisam de melhorias.
+ 
+# 1. REPOSITORY INTELLIGENCE
+ 
+Analisar individualmente todos os repositórios autorizados.
+ 
+Considerar:
+ 
+- Nome.
+- Descrição.
+- README.
+- Linguagens.
+- Tecnologias.
+- Estrutura de diretórios.
+- Arquivos existentes.
+- Histórico de commits.
+- Última atualização.
+- Dependências.
+- Configurações.
+- Finalidade aparente.
+- Relevância profissional.
+- Qualidade técnica.
+- Segurança.
+- Documentação.
+
+ 
+Identificar a finalidade provável de cada projeto sem presumir que o nome ou a estrutura sejam suficientes para determinar sua utilização.
+ 
+# 2. CLASSIFICAÇÃO INTELIGENTE DOS REPOSITÓRIOS
+ 
+Criar cinco categorias:
+ 
+## A. KEEP PUBLIC — MANTER PÚBLICO
+ 
+Projetos que demonstram competências profissionais, ferramentas relevantes, aplicações completas, pesquisas técnicas e soluções que agregam valor ao portfólio.
+ 
+## B. CONSIDER PRIVATE — RECOMENDAR PRIVATIZAÇÃO
+ 
+Identificar possíveis:
+ 
+- Backups de sites.
+- Backups de aplicações.
+- Cópias de projetos.
+- Repositórios temporários.
+- Experimentos pessoais.
+- Testes antigos.
+- Projetos sem finalidade profissional clara.
+- Protótipos que não representam a maturidade técnica atual.
+- Repositórios com dados internos ou informações sensíveis.
+
+ 
+Não recomendar privatização apenas porque um projeto é antigo, pequeno ou experimental.
+ 
+## C. ARCHIVE — RECOMENDAR ARQUIVAMENTO
+ 
+Identificar projetos que parecem concluídos, abandonados ou sem necessidade de manutenção ativa.
+ 
+Preservar o histórico e a possibilidade de consulta futura.
+ 
+## D. IMPROVE — RECOMENDAR MELHORIA
+ 
+Identificar projetos que possuem potencial profissional, mas precisam de:
+ 
+- Melhor README.
+- Descrição mais clara.
+- Organização.
+- Documentação.
+- Testes.
+- Melhorias de segurança.
+- Padronização.
+- Correções técnicas.
+
+ 
+## E. SECURITY REVIEW — REVISÃO DE SEGURANÇA
+ 
+Identificar repositórios com possíveis:
+ 
+- Credenciais expostas.
+- Arquivos .env.
+- Backups contendo informações sensíveis.
+- Dados pessoais.
+- Configurações internas.
+- Chaves e tokens.
+- Informações que não deveriam estar publicadas.
+
+ 
+Não exibir os valores dos segredos encontrados.
+ 
+# 3. DETECÇÃO INTELIGENTE DE BACKUPS
+ 
+Criar um mecanismo especializado para identificar repositórios que aparentemente sejam backups.
+ 
+Analisar nomes como:
+ 
+- backup.
+- backup-site.
+- site-backup.
+- old-project.
+- project-copy.
+- restore.
+- deploy-backup.
+- website-old.
+- archive.
+- test-copy.
+
+ 
+Examinar também a estrutura dos arquivos.
+ 
+Identificar possíveis cópias de sites, aplicações e projetos.
+ 
+Verificar a presença de:
+ 
+- Arquivos compactados.
+- Dumps de banco de dados.
+- Cópias de diretórios.
+- Arquivos de configuração.
+- Arquivos temporários.
+- Conteúdo duplicado.
+- Exportações de aplicações.
+
+ 
+Diferenciar backups legítimos de projetos funcionais.
+ 
+Não classificar automaticamente um projeto como backup somente pelo nome.
+ 
+# 4. ANÁLISE DE RELEVÂNCIA PROFISSIONAL
+ 
+Utilizar o currículo anexado pelo usuário e as informações comprovadas dos projetos para avaliar a relevância de cada repositório.
+ 
+Identificar:
+ 
+- Projetos que demonstram competências profissionais.
+- Projetos que fortalecem o posicionamento técnico.
+- Ferramentas que merecem destaque.
+- Pesquisas relevantes.
+- Projetos experimentais.
+- Projetos redundantes.
+- Projetos que poderiam ser desenvolvidos novamente com melhor arquitetura.
+
+ 
+Criar uma classificação de relevância para portfólio.
+ 
+Considerar o contexto profissional do usuário, sem desvalorizar projetos antigos ou experimentais.
+ 
+# 5. RECOMMENDATION ENGINE
+ 
+Para cada repositório, gerar uma recomendação individual contendo:
+ 
+1. Nome do repositório.
+2. Finalidade identificada.
+3. Evidências encontradas.
+4. Qualidade da documentação.
+5. Relevância profissional.
+6. Riscos de segurança.
+7. Estado de manutenção.
+8. Classificação recomendada.
+9. Justificativa.
+10. Ação sugerida.
+
+ 
+Apresentar níveis de confiança:
+ 
+- Alta confiança.
+- Média confiança.
+- Baixa confiança.
+
+ 
+Quando não houver evidências suficientes, classificar como inconclusivo.
+ 
+# 6. AÇÕES DISPONÍVEIS
+ 
+Para cada repositório, oferecer:
+ 
+- Manter público.
+- Tornar privado.
+- Arquivar.
+- Melhorar documentação.
+- Melhorar descrição.
+- Executar auditoria de segurança.
+- Reavaliar com Gemini.
+
+ 
+As ações devem utilizar a API oficial do GitHub.
+ 
+IMPORTANTE:
+ 
+Não modificar a visibilidade dos repositórios automaticamente.
+ 
+Não arquivar projetos automaticamente.
+ 
+Não excluir repositórios.
+ 
+Toda mudança de visibilidade ou estado do repositório exige autorização individual e explícita.
+ 
+Antes de tornar um repositório privado, explicar possíveis consequências para forks, colaboradores, GitHub Pages, integrações e acessos externos.
+ 
+Antes de arquivar, verificar dependências operacionais e automações existentes.
+ 
+# 7. DASHBOARD DE CURADORIA
+ 
+Criar uma nova página chamada:
+ 
+REPOSITORY CURATION
+ 
+Apresentar indicadores reais:
+ 
+- Total de repositórios analisados.
+- Recomendados para permanecer públicos.
+- Recomendações de privatização.
+- Recomendações de arquivamento.
+- Projetos que precisam de melhorias.
+- Projetos aguardando revisão de segurança.
+- Projetos inconclusivos.
+
+ 
+Criar filtros por categoria, linguagem, data de atualização e relevância profissional.
+ 
+Cada repositório deverá possuir uma página individual de diagnóstico.
+ 
+# 8. GITHUB PORTFOLIO OPTIMIZATION
+ 
+Após concluir a classificação, gerar uma recomendação para organizar a página pública do GitHub.
+ 
+Identificar:
+ 
+- Melhores projetos para destacar.
+- Repositórios que deveriam ser fixados.
+- Projetos que precisam de documentação.
+- Projetos que deveriam deixar de ocupar posições de destaque.
+- Descrições que precisam ser atualizadas.
+- README principal do perfil que precisa de modernização.
+
+ 
+Criar uma proposta de organização profissional do perfil.
+ 
+# 9. RELATÓRIO FINAL
+ 
+Gerar:
+ 
+GITHUB\_REPOSITORY\_CURATION.md
+ 
+GITHUB\_VISIBILITY\_RECOMMENDATIONS.json
+ 
+GITHUB\_PORTFOLIO\_PRIORITY.md
+ 
+GITHUB\_BACKUP\_DETECTION\_REPORT.md
+ 
+GITHUB\_SECURITY\_REVIEW.md
+ 
+Os relatórios devem conter justificativas, evidências e recomendações individuais.
+ 
+Nunca incluir valores de credenciais ou informações sensíveis.
+ 
+# 10. RESULTADO ESPERADO
+ 
+O GitHub Intelligence AI deverá conseguir analisar a conta inteira e ajudar o usuário a decidir o que merece permanecer público, o que deveria ser privado, o que pode ser arquivado e o que merece receber melhorias.
+ 
+A finalidade é construir um GitHub profissional, seguro, organizado e coerente com a trajetória técnica do desenvolvedor.
+ 
+REGRA FUNDAMENTAL:
+ 
+Não confundir quantidade de repositórios com qualidade profissional.
+ 
+Um GitHub profissional não precisa ter todos os experimentos públicos. Precisa apresentar adequadamente os projetos que representam o conhecimento, a capacidade técnica e a evolução do desenvolvedor.# GITHUB INTELLIGENCE AI — ADVANCED PROFESSIONAL INTELLIGENCE &amp; PROMPT ENGINEERING UPGRADE
+ 
+Atue como arquiteto de software sênior, especialista em inteligência artificial, engenharia de prompts, recrutamento tecnológico, ATS, análise curricular, cibersegurança e desenvolvimento de produtos.
+ 
+MODIFIQUE A APLICAÇÃO EXISTENTE.
+ 
+Não recrie o sistema do zero. Preserve todos os módulos funcionais, dados, integrações e componentes existentes.
+ 
+Esta atualização deverá corrigir principalmente duas limitações:
+ 
+1. A análise curricular está superficial e não apresenta uma avaliação integral do documento.
+2. Os prompts gerados para criação de ferramentas, startups e projetos são pouco detalhados e não possuem especificações técnicas suficientes.
+
+ 
+# MÓDULO 1 — COMPLETE RESUME INTELLIGENCE
+ 
+## 1.1 Análise integral do currículo
+ 
+A IA deverá ler e analisar o currículo inteiro, não apenas extrair algumas palavras-chave.
+ 
+Examinar todas as páginas e todas as seções do documento.
+ 
+Identificar:
+ 
+- Nome e apresentação profissional.
+- Título profissional.
+- Resumo ou objetivo.
+- Experiências profissionais.
+- Atividades desenvolvidas.
+- Projetos profissionais e pessoais.
+- Competências técnicas.
+- Linguagens de programação.
+- Frameworks.
+- Ferramentas.
+- Tecnologias.
+- Certificações.
+- Cursos.
+- Formação acadêmica.
+- Pesquisas.
+- Publicações.
+- Contribuições técnicas.
+- Links profissionais.
+- GitHub.
+- LinkedIn.
+- Portfólio.
+- Informações adicionais.
+
+ 
+Não ignorar seções aparentemente pequenas.
+ 
+Não limitar a análise ao resumo profissional.
+ 
+## 1.2 Relatório completo do currículo original
+ 
+Antes de sugerir alterações, gerar um diagnóstico detalhado.
+ 
+Para cada seção, apresentar:
+ 
+1. Conteúdo identificado no currículo.
+2. Qualidade da apresentação.
+3. Pontos fortes.
+4. Problemas encontrados.
+5. Informações redundantes.
+6. Informações pouco claras.
+7. Oportunidades de melhoria.
+8. Sugestão de reescrita.
+9. Justificativa da alteração.
+
+ 
+Criar uma visão geral do documento inteiro.
+ 
+A IA deverá demonstrar que examinou todas as páginas e seções disponíveis.
+ 
+Se houver páginas ilegíveis ou falhas de extração, informar explicitamente.
+ 
+## 1.3 REESCRITA COMPLETA DO CURRÍCULO
+ 
+Esta funcionalidade é obrigatória.
+ 
+Não basta informar o que o usuário deveria acrescentar.
+ 
+A IA deverá gerar uma versão integralmente revisada do currículo, preservando todas as informações verdadeiras do documento original.
+ 
+Entregar:
+ 
+- Título profissional otimizado.
+- Resumo profissional reescrito.
+- Experiências profissionais revisadas.
+- Descrições de atividades melhoradas.
+- Projetos apresentados profissionalmente.
+- Competências técnicas organizadas.
+- Certificações organizadas.
+- Formação revisada.
+- Links profissionais organizados.
+- Estrutura e hierarquia adequadas.
+
+ 
+O resultado deverá ser um currículo completo, pronto para revisão e utilização.
+ 
+Não entregar apenas sugestões fragmentadas.
+ 
+Não substituir o currículo inteiro por um resumo curto.
+ 
+Não eliminar experiências ou projetos relevantes sem justificar.
+ 
+Não inventar cargos, resultados, métricas, certificações, datas ou experiências.
+ 
+Quando uma informação estiver ausente, manter a informação como não informada em vez de inventá-la.
+ 
+## 1.4 OTIMIZAÇÃO ATS AVANÇADA
+ 
+Avaliar o currículo considerando:
+ 
+- Compatibilidade de estrutura.
+- Hierarquia de títulos.
+- Organização das seções.
+- Palavras-chave.
+- Clareza das experiências.
+- Compatibilidade com leitores automatizados.
+- Consistência de datas.
+- Legibilidade.
+- Formatação.
+- Terminologia técnica.
+
+ 
+Criar dois modos:
+ 
+**Modo currículo geral:** otimizar para o posicionamento profissional do usuário.
+ 
+**Modo vaga específica:** analisar uma descrição de vaga e adaptar o currículo às exigências reais daquela oportunidade.
+ 
+Gerar relatório comparativo entre currículo original e revisado.
+ 
+Não afirmar que existe uma pontuação ATS universal ou garantia de aprovação.
+ 
+## 1.5 EXPORTAÇÃO
+ 
+Permitir gerar:
+ 
+- Currículo revisado em PDF.
+- Currículo revisado em DOCX.
+- Diagnóstico completo em PDF.
+- Relatório de compatibilidade ATS.
+- Currículo em Markdown.
+
+ 
+Manter o documento original preservado.
+ 
+Permitir comparar as versões.
+ 
+# MÓDULO 2 — CAREER INTELLIGENCE AVANÇADA
+ 
+Cruzar as informações do currículo com os repositórios GitHub.
+ 
+Criar um mapa de competências contendo:
+ 
+- Competências comprovadas pelo currículo.
+- Competências demonstradas nos projetos.
+- Competências que aparecem em ambos.
+- Competências que precisam de evidências adicionais.
+- Tecnologias utilizadas.
+- Áreas de especialização.
+- Oportunidades de desenvolvimento.
+
+ 
+Criar uma matriz de evidências.
+ 
+Exemplo:
+ 
+| Competência | Evidência | Projeto | | Python | Código identificado | Repositório correspondente | | Docker | Configurações identificadas | Repositório correspondente | | Segurança de APIs | Código ou documentação analisada | Repositório correspondente |
+ 
+Não marcar uma competência como comprovada apenas porque aparece em um texto promocional.
+ 
+Distinguir conhecimento declarado de conhecimento demonstrado.
+ 
+Gerar recomendações para melhorar a apresentação profissional do usuário.
+ 
+# MÓDULO 3 — ADVANCED PROMPT ENGINEERING
+ 
+Aprimorar o mecanismo de geração de prompts da plataforma.
+ 
+Os prompts gerados para desenvolver novas ferramentas, aplicações, startups e projetos deverão possuir especificações completas.
+ 
+Não gerar prompts superficiais com apenas nome, objetivo e lista de funcionalidades.
+ 
+Cada prompt deverá conter obrigatoriamente:
+ 
+1. Contexto do produto.
+2. Problema que será resolvido.
+3. Público-alvo.
+4. Objetivos.
+5. Escopo funcional.
+6. Requisitos funcionais.
+7. Requisitos não funcionais.
+8. Arquitetura técnica.
+9. Stack recomendada.
+10. Estrutura de diretórios.
+11. Modelagem de dados.
+12. Endpoints e contratos de API.
+13. Fluxos de utilização.
+14. Interface e experiência.
+15. Autenticação.
+16. Autorização.
+17. Segurança.
+18. Integrações externas.
+19. Tratamento de erros.
+20. Logs e observabilidade.
+21. Testes unitários.
+22. Testes de integração.
+23. Testes de segurança.
+24. Estratégia de implantação.
+25. Documentação.
+26. Critérios de aceitação.
+27. Restrições técnicas.
+28. Plano de implementação por etapas.
+
+ 
+## 3.1 Prompt adaptativo por tecnologia
+ 
+A IA deverá adaptar a especificação à tecnologia escolhida.
+ 
+Exemplos:
+ 
+- React.
+- Next.js.
+- Node.js.
+- Python.
+- FastAPI.
+- Django.
+- PostgreSQL.
+- MongoDB.
+- Docker.
+- Kubernetes.
+- Google Cloud.
+- AWS.
+
+ 
+Não utilizar uma stack fixa para todos os projetos.
+ 
+Selecionar tecnologias justificadas pelo problema e pela complexidade.
+ 
+## 3.2 PROMPTS PARA DIFERENTES AMBIENTES
+ 
+Permitir gerar prompts específicos para:
+ 
+- Google AI Studio.
+- Gemini.
+- Claude.
+- Ambientes de desenvolvimento assistidos por IA.
+- Desenvolvimento manual por equipes de engenharia.
+
+ 
+Considerar as limitações de contexto, ferramentas e execução de cada ambiente.
+ 
+## 3.3 PROMPT DE IMPLEMENTAÇÃO COMPLETA
+ 
+Quando o usuário solicitar um prompt para desenvolver uma ferramenta, a IA deverá especificar o comportamento esperado de uma aplicação funcional.
+ 
+Não aceitar como resultado final:
+ 
+- Botões decorativos.
+- APIs simuladas.
+- Dados fictícios.
+- Telas sem integração.
+- Funcionalidades incompletas apresentadas como prontas.
+- Código sem tratamento de erros.
+
+ 
+Exigir implementação, testes e validação das funcionalidades.
+ 
+# MÓDULO 4 — STARTUP &amp; HACKATHON INTELLIGENCE
+ 
+Melhorar a geração de ideias.
+ 
+Cada ideia deverá possuir:
+ 
+- Problema real.
+- Evidências da necessidade.
+- Público-alvo.
+- Alternativas existentes.
+- Concorrentes conhecidos.
+- Diferencial proposto.
+- Viabilidade técnica.
+- Potencial comercial.
+- Modelo de negócio.
+- Arquitetura.
+- MVP.
+- Roadmap.
+- Riscos.
+- Estratégia de validação.
+
+ 
+Para hackathons, acrescentar:
+ 
+- Compatibilidade com o tema.
+- Critérios oficiais de avaliação.
+- Originalidade.
+- Impacto demonstrável.
+- Viabilidade dentro do tempo disponível.
+- Demonstração ao vivo.
+- Diferencial competitivo.
+- Plano de apresentação aos jurados.
+
+ 
+Criar um ranking de ideias baseado em critérios transparentes.
+ 
+Não prometer vitória nem inventar probabilidades de sucesso.
+ 
+Quando possível, pesquisar soluções semelhantes e tendências atuais antes de classificar uma ideia como inovadora.
+ 
+# MÓDULO 5 — REPOSITORY CURATION INTELLIGENCE
+ 
+Aprimorar a análise de repositórios existente.
+ 
+Cada recomendação deverá ser baseada em evidências concretas.
+ 
+Para cada repositório, gerar:
+ 
+- Identificação.
+- Finalidade.
+- Arquitetura.
+- Tecnologias.
+- Qualidade técnica.
+- Qualidade documental.
+- Segurança.
+- Estado de manutenção.
+- Relevância profissional.
+- Possível redundância.
+- Possível característica de backup.
+- Recomendação de visibilidade.
+- Justificativa.
+- Nível de confiança.
+
+ 
+Distinguir claramente:
+ 
+- Fato identificado.
+- Inferência da IA.
+- Hipótese.
+- Recomendação.
+
+ 
+Não recomendar privatização apenas porque um projeto é antigo ou experimental.
+ 
+Não modificar visibilidade, arquivar ou excluir projetos sem autorização individual.
+ 
+# MÓDULO 6 — PROMPT QUALITY VALIDATOR
+ 
+Criar um mecanismo que avalie os prompts antes de apresentá-los ao usuário.
+ 
+Verificar:
+ 
+- Objetivo bem definido.
+- Escopo completo.
+- Ausência de contradições.
+- Requisitos verificáveis.
+- Arquitetura coerente.
+- Segurança contemplada.
+- Integrações especificadas.
+- Critérios de conclusão.
+- Viabilidade de implementação.
+
+ 
+Identificar informações ausentes.
+ 
+Se a ideia estiver incompleta, utilizar pressupostos explicitamente identificados, em vez de inventar requisitos.
+ 
+Gerar uma versão final revisada do prompt.
+ 
+Apresentar indicadores de completude, clareza, consistência e verificabilidade, sem tratá-los como garantia de qualidade do software produzido.
+ 
+# MÓDULO 7 — EXPERIÊNCIA DO USUÁRIO
+ 
+Reorganizar a área Professional Intelligence em:
+ 
+1. Análise completa do currículo.
+2. Currículo profissional revisado.
+3. Otimização ATS.
+4. Mapa de competências.
+5. Ideias de ferramentas.
+6. Laboratório de startups.
+7. Hackathon Intelligence.
+8. Gerador de prompts avançados.
+
+ 
+A análise do currículo deverá apresentar resultados completos, e não apenas recomendações resumidas.
+ 
+Criar abas para navegar pelas diferentes seções.
+ 
+Permitir visualizar o currículo original e o revisado lado a lado.
+ 
+Permitir editar o conteúdo antes da exportação.
+ 
+# MÓDULO 8 — PERFORMANCE
+ 
+Otimizar o processamento:
+ 
+- Extrair texto localmente no backend.
+- Evitar reenvio desnecessário de documentos.
+- Utilizar cache.
+- Processar análises independentes em paralelo.
+- Dividir documentos grandes em partes com preservação de contexto.
+- Utilizar modelos rápidos para extração e classificação.
+- Utilizar modelos mais capazes para revisão aprofundada.
+- Persistir resultados parciais.
+- Permitir retomada de tarefas.
+- Evitar chamadas redundantes à API Gemini.
+
+ 
+A velocidade nunca deverá comprometer a leitura integral do currículo.
+ 
+# MÓDULO 9 — VALIDAÇÃO FINAL
+ 
+Antes de declarar a implementação concluída:
+ 
+1. Testar extração de currículos PDF.
+2. Testar extração DOCX.
+3. Confirmar leitura de todas as páginas.
+4. Testar geração do currículo integral revisado.
+5. Verificar preservação de informações originais.
+6. Testar exportação PDF e DOCX.
+7. Testar prompts completos.
+8. Verificar consistência das recomendações.
+9. Testar integração com dados reais do GitHub.
+10. Corrigir erros encontrados.
+
+ 
+Não declarar funcionalidades implementadas sem testes.
+ 
+# RESULTADO ESPERADO
+ 
+O GitHub Intelligence AI deverá ser capaz de analisar integralmente um currículo, produzir uma versão profissional revisada, relacionar competências com projetos reais, identificar oportunidades de desenvolvimento e gerar especificações técnicas robustas para novos produtos.
+ 
+A plataforma não deverá se limitar a dizer ao usuário o que falta.
+ 
+Ela deverá entregar documentos completos, diagnósticos fundamentados, propostas concretas e prompts suficientemente detalhados para orientar a construção de aplicações reais.# MÓDULO AVANÇADO — PDF GENERATION &amp; DOCUMENT EXPORT
+ 
+Implemente um módulo profissional de geração de documentos PDF no GitHub Intelligence AI. Integre-o às funcionalidades existentes, preservando a arquitetura, o design e os recursos atuais da aplicação.
+ 
+## 1. Geração de currículo em PDF
+ 
+Permitir gerar currículos completos a partir do currículo analisado pela IA.
+ 
+Funcionalidades:
+ 
+- Gerar o currículo completo, não apenas recomendações de melhorias.
+- Disponibilizar modelos profissionais, minimalistas, técnicos e executivos.
+- Permitir personalizar cores, tipografia, espaçamento, margens e organização das seções.
+- Permitir escolher quais seções serão incluídas.
+- Criar versões direcionadas a vagas específicas.
+- Gerar versões em português e inglês quando solicitado.
+- Preservar fielmente as informações originais, sem inventar experiências, empresas, datas, certificações ou competências.
+- Otimizar a estrutura para leitura por sistemas ATS, com opção de layout simples e compatível.
+- Exibir uma prévia antes da exportação.
+
+ 
+## 2. Gerador de relatórios em PDF
+ 
+Permitir exportar análises da plataforma em documentos PDF profissionais:
+ 
+- Relatório completo de análise do currículo.
+- Diagnóstico profissional e de competências.
+- Comparação entre currículo e repositórios GitHub.
+- Auditoria técnica de repositórios.
+- Relatório de segurança.
+- Relatório de curadoria e organização do GitHub.
+- Análise de projetos e tecnologias.
+- Relatórios de ideias, startups e hackathons.
+- Relatórios de recomendações e planos de melhoria.
+
+ 
+Cada relatório deve incluir título, data de geração, sumário, seções organizadas, tabelas legíveis e paginação.
+ 
+## 3. Portfólio profissional em PDF
+ 
+Criar uma funcionalidade para gerar um portfólio profissional em PDF utilizando informações verificadas do currículo e dos repositórios.
+ 
+Incluir:
+ 
+- Apresentação profissional.
+- Resumo de competências.
+- Tecnologias utilizadas.
+- Projetos selecionados.
+- Descrição técnica dos projetos.
+- Links clicáveis para repositórios e demonstrações.
+- Contribuições e evidências identificáveis.
+- Certificações e formação, quando fornecidas.
+- Informações de contato autorizadas pelo usuário.
+
+ 
+Não apresentar projetos experimentais como produtos finalizados nem transformar recomendações da IA em experiências profissionais comprovadas.
+ 
+## 4. Editor e personalização de documentos
+ 
+Criar uma área de edição antes da exportação, permitindo:
+ 
+- Editar textos e títulos.
+- Reordenar seções.
+- Adicionar ou remover conteúdo.
+- Escolher modelos visuais.
+- Visualizar páginas individualmente.
+- Identificar quebras de página inadequadas.
+- Ajustar margens, fontes e espaçamentos.
+- Visualizar o documento em diferentes tamanhos de tela.
+
+ 
+As alterações feitas na versão exportável não devem sobrescrever o currículo original ou os dados dos repositórios.
+ 
+## 5. Exportação e gerenciamento
+ 
+Disponibilizar:
+ 
+- Download do PDF.
+- Exportação em DOCX e Markdown quando aplicável.
+- Nome personalizado para o arquivo.
+- Histórico de documentos gerados.
+- Data e tipo de cada documento.
+- Possibilidade de gerar uma nova versão sem apagar a anterior.
+- Opção de excluir documentos gerados pelo usuário.
+
+ 
+## 6. Qualidade técnica dos PDFs
+ 
+A geração deve produzir arquivos reais, válidos e utilizáveis, não apenas simulações de visualização.
+ 
+Requisitos:
+ 
+- Texto selecionável e pesquisável.
+- Links clicáveis.
+- Fontes incorporadas quando necessário.
+- Suporte a caracteres acentuados e português brasileiro.
+- Cabeçalhos, rodapés e numeração de páginas.
+- Tabelas sem cortes.
+- Imagens em resolução adequada.
+- Quebras de página inteligentes.
+- Sumário e hierarquia visual consistente.
+- Verificação automática do arquivo após a geração.
+- Tratamento de documentos extensos.
+
+ 
+Não cortar conteúdo silenciosamente. Se houver falha na geração, informar o erro e permitir tentar novamente.
+ 
+## 7. Experiência do usuário
+ 
+Adicionar uma seção chamada **Central de Documentos**.
+ 
+Nela, o usuário poderá:
+ 
+1. Escolher o tipo de documento.
+2. Selecionar os dados que deseja utilizar.
+3. Escolher o modelo visual.
+4. Visualizar o resultado.
+5. Editar o conteúdo.
+6. Gerar e baixar o PDF.
+7. Consultar versões anteriores.
+
+ 
+A interface deve ser responsiva, funcionar em dispositivos móveis e manter o padrão visual atual da aplicação.
+ 
+## 8. Integração e desempenho
+ 
+- Reutilizar os dados já processados pela aplicação.
+- Não executar novamente análises completas desnecessariamente.
+- Processar PDFs extensos de forma assíncrona.
+- Exibir progresso real da geração.
+- Preservar o conteúdo integral.
+- Separar a lógica de geração de documentos da interface.
+- Implementar tratamento de erros e testes automatizados.
+
+ 
+## 9. Critérios de aceitação
+ 
+A funcionalidade somente será considerada concluída quando:
+ 
+- For possível gerar um currículo completo em PDF.
+- For possível gerar relatórios técnicos em PDF.
+- For possível gerar um portfólio em PDF.
+- A prévia corresponder ao arquivo exportado.
+- O arquivo abrir corretamente em leitores comuns.
+- O texto estiver completo, sem cortes ou caracteres corrompidos.
+- Os links funcionarem.
+- A exportação funcionar em dispositivos móveis.
+- Nenhuma funcionalidade existente da aplicação for quebrada.
+
+ 
+**IMPORTANTE:** Não reconstrua a aplicação do zero. Analise o projeto existente, identifique sua arquitetura e implemente o módulo integrado aos componentes e serviços atuais. Não crie botões fictícios, dados de demonstração ou funcionalidades que apenas aparentem funcionar.

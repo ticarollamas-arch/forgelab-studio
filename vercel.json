@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "echo 'ForgeLab public portal: static deployment'",
+  "outputDirectory": "public",
+  "rewrites": [
+    { "source": "/admin/login", "destination": "/api/admin?view=login" },
+    { "source": "/admin", "destination": "/api/admin?view=dashboard" },
+    { "source": "/login", "destination": "/login.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
